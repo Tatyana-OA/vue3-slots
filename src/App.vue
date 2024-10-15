@@ -3,6 +3,7 @@ import BaseButton from "./components/BaseButton.vue";
 import BlogLayout from "./components/BlogLayout.vue";
 import IconCommunity from "./components/icons/IconCommunity.vue";
 import IconEcosystem from "./components/icons/IconEcosystem.vue";
+import Library from "./components/Library.vue";
 </script>
 
 <template>
@@ -30,6 +31,7 @@ import IconEcosystem from "./components/icons/IconEcosystem.vue";
         </ul>
       </template>
     </BlogLayout>
+    <Library />
   </main>
 </template>
 
