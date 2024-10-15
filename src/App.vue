@@ -4,6 +4,13 @@ import BlogLayout from "./components/BlogLayout.vue";
 import IconCommunity from "./components/icons/IconCommunity.vue";
 import IconEcosystem from "./components/icons/IconEcosystem.vue";
 import Library from "./components/Library.vue";
+
+const imageAttrs = {
+  src: "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?cs=srgb&dl=pexels-chevanon-312418.jpg&fm=jpg",
+  alt: "COFFEEEEEEEEEEEE",
+  width: "300px",
+  height: "auto",
+};
 </script>
 
 <template>
@@ -32,6 +39,13 @@ import Library from "./components/Library.vue";
       </template>
     </BlogLayout>
     <Library />
+    <img v-bind="imageAttrs" />
+    <img
+      v-bind:src="imageAttrs.src"
+      v-bind:alt="imageAttrs.alt"
+      v-bind:height="imageAttrs.height"
+      v-bind:width="imageAttrs.width"
+    />
   </main>
 </template>
 
